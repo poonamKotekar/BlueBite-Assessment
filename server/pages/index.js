@@ -4,15 +4,15 @@ const pageThree = require('./pageThree');
 
 module.exports = [
     {
-        id: 'page-one',
+        id: 'new-york',
         data: pageOne,
     },
     {
-        id: 'page-two',
+        id: 'chicago',
         data: pageTwo,
     },
     {
-        id: 'page-three',
+        id: 'san-francisco',
         data: pageThree,
     },
 ];

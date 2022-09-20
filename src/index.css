@@ -1,6 +1,135 @@
+
 body {
     margin: 0;
+    background-color: #eeeeee;
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+.ImageClass {
+    background-color: #2e71f0;
+    width: 80%;
+    height: 150px;
+    margin: 20px;
+    border-radius: 25px;
+    padding: 20px;
+    height: 150px;
+    /*background-image: url("/public/locations/chicago.png");*/
+    display: flex;
+    background-repeat: no-repeat;
+}
+
+
+.ImageUrlClass {
+    background-color: #2e71f0;
+    border: 2px solid #e2e2e2;
+    /*width: auto;*/
+    width: 90%;
+    height: 150px;
+    border-radius: 25px;
+    /*padding: 20px;*/
+    height: 160px;
+    margin-left: 5%;
+    background-repeat: no-repeat;
+}
+.LocationName {
+    color: #ffffff;
+}
+.WeatherClass {
+    background-color: #fff;
+    border: 2px solid #e2e2e2;
+    width: 80%;
+    height: 150px;
+    margin: 20px;
+    border-radius: 25px;
+    padding: 20px 20px 20px 20px;
+    height: 150px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.iconLocation {
+    font-size:48px;
+    color:white
+}
+.pin {
+    width: 47px ;
+    height: 47px ;
+    background-color: #eee ;
+    border-radius: 60px 60px 0px 60px ;
+    position:relative ;
+    transform: rotate(45deg);
+    margin-left: auto;
+    order: 2;
+    top: 20%;
+}
+
+.pin::after {
+    content: "" ;
+    width: 8px ;
+    height: 8px ;
+    background: white ;
+    position: absolute ;
+    left: 50% ;
+    top: 50% ;
+    border-radius: 60px 60px 60px 60px ;
+}
+.innerPin {
+    content: "" ;
+    width: 40px ;
+    height: 40px ;
+    background: #007be5 ;
+    position: absolute ;
+    left: 7% ;
+    top: 7% ;
+    border-radius: 60px 60px 0px 60px ;
+}
+.showHideClass {
+    color: white;
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    order: 2;
+    margin-top: 25%;
+}
+.Location {
+    order: 2;
+    /* left: 50%; */
+    margin-left: 80%;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.temperature {
+    font-size: 28px;
+    width: 50%;
+    padding-top: 25px;
+    margin: 0px;
+}
+.ImageContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    order: 2;
+}
+.ForecastImage {
+    order: 2;
+    width: 60px;
+    height: 60px;
+}
+.RHSContainer {
+    display: flex;
+    margin-bottom: 20px;
+}
+.WeatherCardContainer {
+    display: flex;
+    height: 85%;
+}
+.DayOfTheWeek {
+    font-size: 14px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+.CurrentCondition {
+    width: 70%;
+    height: 70%;
 }

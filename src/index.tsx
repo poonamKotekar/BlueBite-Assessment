@@ -11,9 +11,9 @@ import {
 
 const Root = () => (
     <div>
-        <Link to="/page-one">Page One</Link><br />
-        <Link to="/page-two">Page Two</Link><br />
-        <Link to="/page-three">Page Three</Link>
+        <Link to="/new-york">New York</Link><br />
+        <Link to="/chicago">Chicago</Link><br />
+        <Link to="/san-francisco">San Francisco</Link>
     </div>
 );
 
@@ -24,7 +24,7 @@ ReactDOM.render(
                 <Route path="/" exact>
                     <Root />
                 </Route>
-                <Route path="/:id">
+                <Route path="/:id" >
                     <App />
                 </Route>
             </Switch>
